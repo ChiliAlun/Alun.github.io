@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alun｜個人網站</title>
+  <meta name="description" content="Alun 的個人網站：關於我、作品與聯絡方式。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#top">Alun</a>
+      <ul class="nav-links">
+        <li><a href="#about">關於我</a></li>
+        <li><a href="#projects">作品</a></li>
+        <li><a href="#contact">聯絡</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <p class="eyebrow">嗨，我是</p>
+      <h1>Alun</h1>
+      <p class="lead">在這裡寫一句介紹自己的話，例如你的職業、興趣，或正在做的事。</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">看看我的作品</a>
+        <a class="btn" href="#contact">與我聯絡</a>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>關於我</h2>
+      <p>這裡可以放一段比較完整的自我介紹：你的背景、專長、喜歡做的事情。之後告訴我內容，我可以幫你替換。</p>
+      <ul class="tags">
+        <li>技能一</li>
+        <li>技能二</li>
+        <li>興趣一</li>
+        <li>興趣二</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>作品</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>作品名稱一</h3>
+          <p>簡短描述這個作品在做什麼、你在其中的角色。</p>
+          <a href="#">查看 →</a>
+        </article>
+        <article class="card">
+          <h3>作品名稱二</h3>
+          <p>簡短描述這個作品在做什麼、你在其中的角色。</p>
+          <a href="#">查看 →</a>
+        </article>
+        <article class="card">
+          <h3>作品名稱三</h3>
+          <p>簡短描述這個作品在做什麼、你在其中的角色。</p>
+          <a href="#">查看 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>聯絡</h2>
+      <p>歡迎透過以下方式找到我：</p>
+      <ul class="links">
+        <li><a href="https://github.com/ChiliAlun">GitHub</a></li>
+        <li><a href="mailto:you@example.com">Email</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> Alun</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
