@@ -21,6 +21,82 @@
 
   <main id="top">
     <section class="hero container">
+      <figure class="mosquito">
+        <svg viewBox="0 0 420 300" role="img" aria-labelledby="mosquito-title">
+          <title id="mosquito-title">一隻彩色的蚊子說 Hello!!</title>
+          <defs>
+            <linearGradient id="rainbow" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#ef4444"/>
+              <stop offset="0.2" stop-color="#f97316"/>
+              <stop offset="0.4" stop-color="#eab308"/>
+              <stop offset="0.6" stop-color="#22c55e"/>
+              <stop offset="0.8" stop-color="#3b82f6"/>
+              <stop offset="1" stop-color="#a855f7"/>
+            </linearGradient>
+            <linearGradient id="wing" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#67e8f9" stop-opacity="0.75"/>
+              <stop offset="0.5" stop-color="#f0abfc" stop-opacity="0.6"/>
+              <stop offset="1" stop-color="#fde047" stop-opacity="0.7"/>
+            </linearGradient>
+          </defs>
+
+          <!-- 對話框 -->
+          <g class="bubble">
+            <rect x="250" y="12" width="150" height="66" rx="22" fill="#fff" stroke="#1c1917" stroke-width="3"/>
+            <path d="M292 76 L276 112 L318 76 Z" fill="#fff" stroke="#1c1917" stroke-width="3" stroke-linejoin="round"/>
+            <rect x="294" y="71" width="22" height="8" fill="#fff"/>
+            <text x="325" y="55" text-anchor="middle" font-size="30" font-weight="800" fill="#c2410c">Hello!!</text>
+          </g>
+
+          <g class="bug">
+            <!-- 腳 -->
+            <g stroke="#1c1917" stroke-width="3" fill="none" stroke-linecap="round">
+              <path d="M170 190 L140 235 L120 270"/>
+              <path d="M185 195 L180 245 L170 282"/>
+              <path d="M200 192 L225 240 L245 275"/>
+              <path d="M165 185 L120 210 L90 240"/>
+              <path d="M205 188 L250 215 L280 250"/>
+              <path d="M190 197 L205 255 L215 288"/>
+            </g>
+
+            <!-- 翅膀 -->
+            <g class="wings" stroke="#0e7490" stroke-width="2">
+              <ellipse class="wing-l" cx="140" cy="110" rx="70" ry="28" fill="url(#wing)" transform="rotate(-30 140 110)"/>
+              <ellipse class="wing-r" cx="200" cy="100" rx="70" ry="26" fill="url(#wing)" transform="rotate(-60 200 100)"/>
+            </g>
+
+            <!-- 腹部 -->
+            <ellipse cx="105" cy="185" rx="75" ry="24" fill="url(#rainbow)" stroke="#1c1917" stroke-width="3" transform="rotate(15 105 185)"/>
+            <g stroke="#1c1917" stroke-width="2" opacity="0.45">
+              <path d="M70 160 Q66 180 62 200"/>
+              <path d="M95 165 Q92 186 88 206"/>
+              <path d="M120 171 Q117 191 114 211"/>
+            </g>
+
+            <!-- 胸部 -->
+            <circle cx="188" cy="170" r="30" fill="#ec4899" stroke="#1c1917" stroke-width="3"/>
+
+            <!-- 頭 -->
+            <circle cx="232" cy="150" r="24" fill="#8b5cf6" stroke="#1c1917" stroke-width="3"/>
+            <circle cx="240" cy="143" r="10" fill="#fff" stroke="#1c1917" stroke-width="2"/>
+            <circle cx="243" cy="143" r="5" fill="#1c1917"/>
+            <circle cx="245" cy="140" r="1.8" fill="#fff"/>
+            <path d="M232 160 Q240 166 248 160" stroke="#1c1917" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <circle cx="224" cy="158" r="4" fill="#f9a8d4" opacity="0.8"/>
+
+            <!-- 觸角 -->
+            <g stroke="#1c1917" stroke-width="2.5" fill="none" stroke-linecap="round">
+              <path d="M228 128 Q220 112 204 108"/>
+              <path d="M240 128 Q244 116 252 112"/>
+            </g>
+            <circle cx="204" cy="108" r="4" fill="#facc15"/>
+            <circle cx="252" cy="112" r="4" fill="#22c55e"/>
+
+            <!-- 口器 -->
+            <path d="M254 160 L300 184" stroke="#1c1917" stroke-width="3" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </figure>
       <p class="eyebrow">嗨，我是</p>
       <h1>Alun</h1>
       <p class="lead">在這裡寫一句介紹自己的話，例如你的職業、興趣，或正在做的事。</p>
